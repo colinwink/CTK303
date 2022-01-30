@@ -99,8 +99,8 @@ p {
 
 .smile {
   position: absolute;
-  top: 230px;
-  left: 580px;
+  top: 400px;
+  left: 530px;
   height: 100px;
   width: 200px;
   transform: rotate(180deg);
