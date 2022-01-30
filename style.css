@@ -1,74 +1,117 @@
-#wrapper {
-  margin: 1em auto;
-  padding: 10px;
-  width: 960px;
-  background-color: #2878BD;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.spotlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius:100px;
+  opacity: .5;
+  background-color: yellow;
+  animation: spotlight-ani 10s ease-out;
+  animation-fill-mode: forwards;
 }
 
-header {
-  grid-column: span 3;
-  color: white;
-  font-size: 48px;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-  margin-bottom: 15px;
+@keyframes spotlight-ani {
+  0%   { opacity: .0; left:0; }
+  25%  { opacity: .5; left: 900px; top: 200px; height: 200px; width: 200px;}
+  60% { left: 400px; top: 350px; height: 120px; width: 120px;}
+  79% { opacity: .7; left: 550px; top: 425px; height: 175px; width: 175px;}
+  100% {opacity: 1; left: 445px; top: 100px; height: 367px; width: 367px; border-radius: 367px;}
+}
+.foundit {
+  position: absolute;
+  top: 185px;
+  left: 510px;
+  width: 100px;
+  height: 100px;
+  border-radius:100px;
+  background-color: white;
+  animation: foundit-ani 20s ease-in;
+  animation-fill-mode: forwards;
 }
 
-img {
-  border: 2px solid white;
-  transition: 0.6s;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  width: 90%;
+.foundit2 {
+  position: absolute;
+  top: 185px;
+  left: 640px;
+  width: 100px;
+  height: 100px;
+  border-radius:100px;
+  background-color: white;
+  animation: foundit-ani 20s ease-out;
+  animation-fill-mode: forwards;
 }
 
-img:hover {
-  border: 2px solid cyan;
+@keyframes foundit-ani {
+  0% { opacity: .0}
+  49% {opacity: 0}
+  50% { height: 0; opacity: .9}
+  57% {height: 100px;}
 }
 
-.center {
-  display: block;
- margin-left: 270px;
- margin-right: 210px;
- width: 75%;
+.pupil {
+  position: absolute;
+  top: 205px;
+  left: 530px;
+  width: 40px;
+  height: 40px;
+  border-radius:40px;
+  background-color: black;
+  animation: pupil-ani 20s ease-out;
+  animation-fill-mode: forwards;
 }
 
-.body {
-  grid-column: span 3;
-  color: white;
-  font-size: 15px;
-  font-family: Helvetica, sans-serif;
-  margin-left: 10px;
-  margin-bottom: 40px;
-  text-align: center;
+.pupil2 {
+  position: absolute;
+  top: 205px;
+  left: 660px;
+  width: 40px;
+  height: 40px;
+  border-radius:40px;
+  background-color: black;
+  animation: pupil-ani 20s ease-out;
+  animation-fill-mode: forwards;
 }
 
-nav li {
-  width: 400px;
-  display: inline-block;
-  margin-bottom: 60px;
-  grid-column: span 2;
-
+@keyframes pupil-ani {
+  0% { opacity: .0}
+  50% {opacity: 0}
+  52% { height: 0; opacity: .9}
+  59% {height: 40px;}
 }
 
-nav li a {
-  display: block;
-  background-color: #2878BD;
-  border: 2px solid white;
-  border-radius: 15px;
-  padding: 7px;
-  color: white;
+p {
+  position: absolute;
+  top: 500px;
+  left: 350px;
   font-size: 50px;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-  transition: background-color 0.5s, color 0.5s;
+  font-weight: bolder;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  animation: text-ani 20s ease-out;
 }
 
-nav li a:hover {
-  background-color: cyan;
-  color: black;
+@keyframes text-ani {
+  0% {opacity: 0; top: 570px;}
+  50% {opacity: 0; top: 570px;}
+  54% {top: 500px; opacity: 1;}
+}
+
+.smile {
+  position: absolute;
+  top: 52%;
+  left: 41%;
+  height: 100px;
+  width: 200px;
+  transform: rotate(180deg);
+  border-radius: 150px 150px 0 0;
+  background-color: black;
+  animation: smile-ani 20s ease-out;
+}
+
+@keyframes smile-ani {
+  0% { opacity: .0}
+  50% {opacity: 0}
+  52% { height: 0; opacity: .9}
+  55% {height: 40px;}
 }
