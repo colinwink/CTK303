@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Side Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+<script src="sketch2.js"></script>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<div id="movecanvas2"></div>
+
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="sidepage.html">Page1</a>
+  <a href="sidepage2.html">Page2</a>
+</div>
+
+<p class='side'>Link to source code <a href="https://p5js.org/examples/drawing-patterns.html" target="_blank">here.</a></p>
+
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  </body>
+</html>

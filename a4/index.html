@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Java</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+<script src="sketch.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1> WELCOME </h1>
+    <div id="movecanvas"></div>
+
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="sidepage.html">Page1</a>
+  <a href="sidepage2.html">Page2</a>
+</div>
+
+    <p> This is a website created using the p5js library. I used an example from p5js's website to help me build the clock. The link to that example is found <a href="https://p5js.org/examples/input-clock.html" target="_blank">here.</a> I also imported a custom font from Google fonts entitled "Rowdies", because I liked how it looked. I also wanted to see if I still remembered how to import fonts. Looks like I do! Also, click on the side hamburger menu for some crazy JAVASCRIPT action! I got the hamburger menu from this link <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav" target="_blank">here.</a> The subpages in the menu don't contain much info, the hamburger menu is really only there to see if I could get it working. However, there are fun widgets on the side pages to mess with! </p>
+
+    <p class="lower">Enjoy browsing the page!</p>
+
+
+
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+  </body>
+</html>

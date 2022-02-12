@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Side Page 2</title>
+<script src="sketch2.js"></script>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body class="side2b">
+
+
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="sidepage.html">Page1</a>
+  <a href="sidepage2.html">Page2</a>
+</div>
+
+
+
+    <h1 class="side2">
+      <button id="genNew">Generate New Random Color</button>
+      <span id="color"></span>
+    </h1>
+
+<p class='side'>Link to source code <a href="https://css-tricks.com/snippets/javascript/random-hex-color/" target="_blank">here.</a></p>
+
+
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+
+    <script>
+      const setBg = () => {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = "#" + randomColor;
+        color.innerHTML = "#" + randomColor;
+      }
+
+      genNew.addEventListener("click", setBg);
+      setBg();
+
+
+
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
